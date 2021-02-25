@@ -6,6 +6,9 @@ document.body.appendChild(div);
 div.id = ("snakeField");
 let score = 0;
 
+let yourScore = document.createElement('p');
+snakeField.appendChild(yourScore);
+
 for (let i = 0; i <= 99; i++) {
     let newDiv = document.createElement('div');
     snakeField.appendChild(newDiv);
@@ -33,13 +36,15 @@ let foodItem = () =>
         snakeItem[redDiv].addEventListener('mouseover', (e) =>
         {
             e.target.classList.remove('food');
-            let yourScore = document.createElement('p');
-            snakeField.appendChild(yourScore);
-            let scoreHtml = yourScore.innerHTML;
+            // let yourScore = document.createElement('p');
+            // snakeField.appendChild(yourScore);
             count = Number(score);
             yourScore.innerHTML = 'your score is: ' + score++;
-            // yourScore = document.removeChild(yourScore);
+
         });
     }, 3000);
 };
 foodItem();
+
+
+// yourScore = snakeField.removeChild(yourScore);
