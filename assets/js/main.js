@@ -36,8 +36,6 @@ let foodItem = () =>
         snakeItem[redDiv].addEventListener('mouseover', (e) =>
         {
             e.target.classList.remove('food');
-            // let yourScore = document.createElement('p');
-            // snakeField.appendChild(yourScore);
             count = Number(score);
             yourScore.innerHTML = 'your score is: ' + score++;
 
@@ -45,6 +43,3 @@ let foodItem = () =>
     }, 3000);
 };
 foodItem();
-
-
-// yourScore = snakeField.removeChild(yourScore);
