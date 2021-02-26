@@ -1,9 +1,8 @@
 
 let div = document.createElement('div');
 
-div.innerHTML = '<div></div>';
 document.body.appendChild(div);
-div.id = ("snakeField");
+div.id = "snakeField";
 let score = 0;
 
 let yourScore = document.createElement('p');
